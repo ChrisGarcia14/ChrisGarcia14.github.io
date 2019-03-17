@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Cru Belize</title>
+<link rel="shortcut icon" type="icon" href="images/favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+	body,h1,h2,h3,h4,h5 {
+		font-family: "Poppins", sans-serif
+	}
+	body {	
+		font-size:16px;
+
+	}
+	a{
+		text-decoration: none;
+	}
+.w3-half img{
+	margin-bottom:-6px;
+	margin-top:16px;
+	opacity:0.8;
+	cursor:pointer
+}
+.w3-half img:hover{
+	opacity:1
+
+}
+#members{
+	border-radius: 25px 25px 0px 0px;
+}
+.w3-light-grey{
+      border-radius: 30px;
+      float: left;
+    }
+.more {
+	height:2%;
+	background-color: #f44336!important;
+	width:100%;
+	border-radius: 25px;
+	text-align: center; 
+	padding: 8px;
+
+}
+.more span {
+	color: white;
+	text-align: center; 
+
+}
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">x</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Cru<br>Belize</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Members</a> 
+   <!-- <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"></a> --> 
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sign Up</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Cru Belize</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Welcome to Cru Belize</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>
+
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+   
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/Solerium.jpg" style="width:100%" onclick="onClick(this)" alt="Solarium">
+      <img src="images/Agora.jpg" style="width:100%" onclick="onClick(this)" alt="Agora">
+      <img src="images/Class.jpg" style="width:100%" onclick="onClick(this)" alt="Metting in a Class ">
+    </div>
+
+    <div class="w3-half">
+      <img src="images/Concerte.jpg" style="width:100%" onclick="onClick(this)" alt="Conference Concert">
+      <img src="images/Flags.jpg" style="width:100%" onclick="onClick(this)" alt="Rasing Belizean Flag at Agora 2018">
+      <img src="images/Movie.jpg" style="width:100%" onclick="onClick(this)" alt="Movie Night">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>About Cru Belize</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p><h3>CRU IS A SOLIDARITY COMMUNITY AND PASSIONATE TO CONNECT PEOPLE WITH JESUS ​​CHRIST.</h3></p>
+    <p>
+
+COMMUNITIES THAT TRANSFORM CITIES <br/>
+
+Campus Crusade for Christ International (now also known as Cru) was founded by Bill and Vonette Bright in 1951 at the University of California at Los Angeles (UCLA). God led them to see the strategic value of college students to help fulfill the Great Commission. 
+
+Today more than 25,000 coordinators serve with this ministry around the world. Currently the president of Campus Crusade for Christ International is Steve Douglas and the global offices are located in Orlando, Florida, USA. 
+
+Today Cru is present in Belize adding to the vast growing numbers of Cru ministries around the Caribbean and the world. Cru Belize was founded in the summer of 2017 by Basilio Choc. Cru Belize has been improving and growing ever since. Cru Belize has launched its first ever college groups at the University of Belize and aiming to reach more people and students by 2020-2030. 
+
+Our mission is to Win, build and send multiplying disciples centered in Christ. 
+
+Faith, Growth, Abundant Fruit </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Members</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>
+    	At Cru Belize All Members Play an Important Roll.
+    </p>
+    
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/Founder.jpg" alt="Basilio" style="width:100%" id="members">
+        <div class="w3-container">
+          <h3>Basilio Choc</h3>
+          <p class="w3-opacity">Founder</p>
+          <p>Age: 25 <br> Feild: English</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/SocialMedia.jpg" alt="Mishelle" style="width:100%" id="members">
+        <div class="w3-container">
+          <h3>Mishelle Villacorta</h3>
+          <p class="w3-opacity">Social Media Lead</p>
+          <p>Age: 25 <br> Feild: Science</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/Web Developer.jpg" alt="Chris" style="width:100%" id="members">
+        <div class="w3-container">
+          <h3>Christopher Garcia</h3>
+          <p class="w3-opacity">Web Developer / Digital Team </p>
+          <p>Age: 25<br>Field: I T</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="members.htm">
+  <div class="more">
+  	<span>See All Member at Cru Belize </span>
+  </div></a>
+<br><br><br><br><br>
+  <!-- Packages / Pricing Tables -->
+
+
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Sign Up Today!</b></h1>
+
+    <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/join.png" style="width:100%" onclick="onClick(this)" alt="Join Now!">
+    </div>
+
+     <div class="w3-half">
+      <img src="images/Concerte.jpg" style="width:100%" onclick="onClick(this)" alt="Conference Concert">
+      </div> 
+
+   
+  
+    
+  </div>
+  <br> <br> <br> <a href="https://goo.gl/forms/49izccKdaslSBjBG2" target="_blank">
+  <div class="more">
+  	<span> Click Here To Sign Up </span>
+  </div></a>
+        
+</div>
+
+<!-- W3.CSS Container -->
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
