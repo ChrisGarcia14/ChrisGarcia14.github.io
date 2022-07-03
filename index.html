@@ -1,235 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Cru Belize</title>
-<link rel="shortcut icon" type="icon" href="images/favicon.ico">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<style>
-	body,h1,h2,h3,h4,h5 {
-		font-family: "Poppins", sans-serif
-	}
-	body {	
-		font-size:16px;
+    <head>
+        <title>Home Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/css/all.css"> 
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <header class="p-3 bg-dark text-white">
+           
+            <div class="container">
+              <div class="headerinfo">
+                <div class="logo">
+                    <img src="./images/chrisgarcia-logo.png" alt="Webiste logo">
+                </div>
+            </div>
+                <nav class="navbar navbar-expand-xl navbar-dark bg-dark " id="mainNav" aria-label="Fourth navbar example">
+                  
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="./index.html"><i class="bi fa-x  bi-house-fill"></i> HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/gallery.html">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Map</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Resume</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-end">
+                            <button type="button" class="btn btn-info"><i class="bi bi-telephone-fill"></i> Contact</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
 
-	}
-	a{
-		text-decoration: none;
-	}
-.w3-half img{
-	margin-bottom:-6px;
-	margin-top:16px;
-	opacity:0.8;
-	cursor:pointer
-}
-.w3-half img:hover{
-	opacity:1
+          <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6 aboutme">
+                <img src="./images/chrisgarcia-owner.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Who is Christopher</h1>
+                <p class="lead">Hi, my name is Christopher Garcia, a 22-year-old from Belmopan. My interest in technology was 
+                  first experienced in high school when my professor talked about the raspberry pie and 
+                   all the great projects that have been made with it.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-}
-#members{
-	border-radius: 25px 25px 0px 0px;
-}
-.w3-light-grey{
-      border-radius: 30px;
-      float: left;
-    }
-.more {
-	height:2%;
-	background-color: #f44336!important;
-	width:100%;
-	border-radius: 25px;
-	text-align: center; 
-	padding: 8px;
+          <div class="bg-dark text-secondary px-4 py-5 text-center skills">
+            <div class="py-5">
+              <div class="row">
+                <h2 class="text-center mt-0 text-white">Skills At Your Service</h2>
 
-}
-.more span {
-	color: white;
-	text-align: center; 
+                <div class="col-lg-2 col-md-6 text-center html">
+                  <div class="mt-5 ">
+                    <i class="fab fa-3x fa-html5 text-secondary mb-4"></i>
+                    <h3 class="h4 mb-2">HTML5</h3>
+                  </div>
+                </div>
 
-}
+                <div class="col-lg-2 col-md-6 text-center css">
+                  <div class="mt-5">
+                    <i class="fab fa-3x fa-css3-alt text-secondary mb-4"></i>
+                    <h3 class="h4 mb-2">CSS3</h3>
+                  </div>
+                </div>
 
-</style>
-<body>
+                
+                <div class="col-lg-2 col-md-6 text-center js">
+                  <div class="mt-5">
+                    <i class="fab fa-3x fa-js text-secondary mb-4"></i>
+                    <h3 class="h4 mb-2">JavaScript</h3>
+                  </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 text-center photoshop">
+                  <div class="mt-5">
+                    <i class="fab fa-3x bi bi-sliders2 text-secondary mb-4"></i>
+                    <h3 class="h4 mb-2">Photoshop</h3>
+                  </div>
+                </div>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">x</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Cru<br>Belize</b></h3>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
-    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Members</a> 
-   <!-- <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"></a> --> 
-        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sign Up</a>
-  </div>
-</nav>
+                <div class="col-lg-2 col-md-6 text-center bootstrap">
+                  <div class="mt-5">
+                    <i class="fab fa-3x bi bi-bootstrap-fill text-secondary mb-4"></i>
+                    <h3 class="h4 mb-2">Bootstrap</h3>
+                  </div>
+                </div>
 
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
-  <span>Cru Belize</span>
-</header>
+                <div class="col-lg-2 col-md-6 text-center programing">
+                  <div class="mt-5">
+                    <i class="fab fa-3x bi bi-terminal-fill text-secondary mb-4"></i>
+                    <i class=""></i>
+                    <h3 class="h4 mb-2">Programing</h3>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+            <div class="container px-4 py-5 home-cards" id="custom-cards">
+                <h1 class="pb-2 border-bottom">Recent Pictures <i class="bi bi-camera-fill"></i></h1>
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./images/chrisgarcia-350z.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center me-3">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use xlink:href="#geo-fill"></use>
+                                        </svg>
+                                        <small><i class="bi bi-geo-fill"></i> Belmopan</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./images/chrisgarcia-waterfall.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center me-3">
+                                        <svg class="bi me-2" width="1em" height="1em">
+                                            <use xlink:href="#geo-fill"></use>
+                                        </svg>
+                                        <small><i class="bi bi-geo-fill"></i> Mountain PineRidge</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./images/chrisgarcia-western.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">.</h2>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="d-flex align-items-center me-3">
+                                        <small><i class="bi bi-geo-fill"></i> Spanish Lookout</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                      <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">View More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-dark text-secondary px-4 py-5 text-center">
+              <div class="py-5">
+                <h1 class="display-5 fw-bold text-white">Get In Touch</h1>
+                <div class="col-lg-6 mx-auto">
+                  <p class="fs-5 mb-4">I'm Always On The Lookout For New Opportunities And Projects Whether It Is To Build A Logo, Site, Flyer, Or Edit Your Pictures And Videos.</p>
+                  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Say Hello</button>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Welcome to Cru Belize</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>
+            <section class="mt-auto py-3 bg-light bg-light">
+              <div class="container">
+                  <span class="text-muted">Place sticky footer content here.</span>
+                </div>
+          </section>
+           
 
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-   
-  </div>
-  
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="images/Solerium.jpg" style="width:100%" onclick="onClick(this)" alt="Solarium">
-      <img src="images/Agora.jpg" style="width:100%" onclick="onClick(this)" alt="Agora">
-      <img src="images/Class.jpg" style="width:100%" onclick="onClick(this)" alt="Metting in a Class ">
-    </div>
+        </main>
+        <footer class="footer mt-auto py-3 bg-dark">
+          <div class="container">
+            <div class="col-lg-3 contact">
+              <h3>Contact</h3>
+              <div>
+                <p>4503 St. Peters Street <br>
+                  San Martin, Belmopan, Belize, C.A <br>
+                  <span>Phone: </span><a href="tel:6372529">(501) 637-2529</a>  <br> 
+                  <a href=""> Map &amp; Directions </a>                  
+                  </p>
+              </div>
+            </div>
+            <div class="col-lg-3 links">
+              <h3>Links</h3>
+              <div class="col-lg-12">
+                <ul class="col-lg-5">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  
+                </ul>
+                 <ul class="col-lg-5">
+                 
+                  <li><a href="#">Map</a></li>
+                  <li><a href="#">Resume</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 connect">
+              <h3>Connect</h3>
+              <div>
+                <ul>
+                  <li><a href="https://www.facebook.com/VisualsByChrisG">
+                    <i class="fa-brands fa-facebook"></i>                    
+                    LIKE US ON FACEBOOK
+                  </a></li>
+                  <li><a href="https://www.instagram.com/visualsbychrisg/">
+                    <i class="fa-brands  fa-instagram"></i>
+                    LIKE US ON INSTAGRAM
+                  </a></li>
+                  <li><a href="https://www.linkedin.com/in/christopher-garcia-24178a170/?originalSubdomain=bz">
+                    <i class="fa-brands fa-linkedin"></i>
+                    LIKE US ON LINKEDIN
+                  </a></li>
 
-    <div class="w3-half">
-      <img src="images/Concerte.jpg" style="width:100%" onclick="onClick(this)" alt="Conference Concert">
-      <img src="images/Flags.jpg" style="width:100%" onclick="onClick(this)" alt="Rasing Belizean Flag at Agora 2018">
-      <img src="images/Movie.jpg" style="width:100%" onclick="onClick(this)" alt="Movie Night">
-    </div>
-  </div>
+                  <li><a href="https://www.tiktok.com/@chrisgarcia99">
+                    <i class="fa-brands  fa-tiktok"></i>
+                    LIKE US ON TIKTOK
+                  </a></li>
 
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
-
-  <!-- Services -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>About Cru Belize</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p><h3>CRU IS A SOLIDARITY COMMUNITY AND PASSIONATE TO CONNECT PEOPLE WITH JESUS ​​CHRIST.</h3></p>
-    <p>
-
-COMMUNITIES THAT TRANSFORM CITIES <br/>
-
-Campus Crusade for Christ International (now also known as Cru) was founded by Bill and Vonette Bright in 1951 at the University of California at Los Angeles (UCLA). God led them to see the strategic value of college students to help fulfill the Great Commission. 
-
-Today more than 25,000 coordinators serve with this ministry around the world. Currently the president of Campus Crusade for Christ International is Steve Douglas and the global offices are located in Orlando, Florida, USA. 
-
-Today Cru is present in Belize adding to the vast growing numbers of Cru ministries around the Caribbean and the world. Cru Belize was founded in the summer of 2017 by Basilio Choc. Cru Belize has been improving and growing ever since. Cru Belize has launched its first ever college groups at the University of Belize and aiming to reach more people and students by 2020-2030. 
-
-Our mission is to Win, build and send multiplying disciples centered in Christ. 
-
-Faith, Growth, Abundant Fruit </p>
-  </div>
-  
-  <!-- Designers -->
-  <div class="w3-container" id="designers" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Members</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>The best team in the world.</p>
-    <p>
-    	At Cru Belize All Members Play an Important Roll.
-    </p>
-    
-  </div>
-
-  <!-- The Team -->
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="images/Founder.jpg" alt="Basilio" style="width:100%" id="members">
-        <div class="w3-container">
-          <h3>Basilio Choc</h3>
-          <p class="w3-opacity">Founder</p>
-          <p>Age: 25 <br> Feild: English</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="images/SocialMedia.jpg" alt="Mishelle" style="width:100%" id="members">
-        <div class="w3-container">
-          <h3>Mishelle Villacorta</h3>
-          <p class="w3-opacity">Social Media Lead</p>
-          <p>Age: 25 <br> Feild: Science</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="images/Web Developer.jpg" alt="Chris" style="width:100%" id="members">
-        <div class="w3-container">
-          <h3>Christopher Garcia</h3>
-          <p class="w3-opacity">Web Developer / Digital Team </p>
-          <p>Age: 18<br>Field: I T</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <a href="members.htm">
-  <div class="more">
-  	<span>See All Member at Cru Belize </span>
-  </div></a>
-<br><br><br><br><br>
-  <!-- Packages / Pricing Tables -->
-
-
-  <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Sign Up Today!</b></h1>
-
-    <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="images/join.png" style="width:100%" onclick="onClick(this)" alt="Join Now!">
-    </div>
-
-     <div class="w3-half">
-      <img src="images/Concerte.jpg" style="width:100%" onclick="onClick(this)" alt="Conference Concert">
-      </div> 
-
-   
-  
-    
-  </div>
-  <br> <br> <br> <a href="https://goo.gl/forms/49izccKdaslSBjBG2" target="_blank">
-  <div class="more">
-  	<span> Click Here To Sign Up </span>
-  </div></a>
-        
-</div>
-
-<!-- W3.CSS Container -->
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
-
-</body>
+                  <li><a href="">
+                    <i class="fa-brands fa-github"></i>
+                    LIKE US ON GITHUB
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </body>
 </html>
+<script src="./script/app.js"></script>
